@@ -5,7 +5,13 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
+static char *font = "Liberation Mono:pixelsize=28:antialias=true:autohint=true";
+/* Spare fonts */
+static char *font2[] = {
+	"Inconsolata for Powerline:pixelsize=30:antialias=true:autohint=true",
+	"FontAwesome:pixelsize=20:antialias=true:autohint=true",
+};
+
 static int borderpx = 2;
 
 /*
@@ -26,8 +32,8 @@ char *stty_args = "stty raw pass8 nl -echo -iexten -cstopb 38400";
 char *vtiden = "\033[?6c";
 
 /* Kerning / character bounding-box multipliers */
-static float cwscale = 1.0;
-static float chscale = 1.0;
+static float cwscale = 1.2;
+static float chscale = 0.9;
 
 /*
  * word delimiter string
