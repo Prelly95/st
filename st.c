@@ -1102,6 +1102,12 @@ kscrollup(const Arg* a)
 }
 
 void
+kwrite(const Arg* a)
+{
+	ttywrite(a->s, strlen(a->s), 0);
+}
+
+void
 tscrolldown(int orig, int n, int copyhist)
 {
 	int i;
